@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="56713" started-at="2016-09-20T06:29:37Z" finished-at="2016-09-20T06:30:34Z">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="56713" started-at="2016-09-20T06:29:37Z" finished-at="2016-09-20T06:30:34Z">
+      <class name="com.dsi.suites.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="setUp" is-config="true" duration-ms="12242" started-at="2016-09-20T12:29:37Z" finished-at="2016-09-20T12:29:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testURL()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="testURL" duration-ms="380" started-at="2016-09-20T12:29:50Z" finished-at="2016-09-20T12:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method status="PASS" signature="test_blankLogin()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="test_blankLogin" duration-ms="4414" started-at="2016-09-20T12:29:50Z" finished-at="2016-09-20T12:29:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_blankLogin -->
+        <test-method status="PASS" signature="LoginWithValidUsernameAndPasswordBlank()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithValidUsernameAndPasswordBlank" duration-ms="5201" started-at="2016-09-20T12:29:54Z" finished-at="2016-09-20T12:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUsernameAndPasswordBlank -->
+        <test-method status="PASS" signature="LoginWithBlankUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithBlankUsernameAndValidPassword" duration-ms="4409" started-at="2016-09-20T12:30:00Z" finished-at="2016-09-20T12:30:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithBlankUsernameAndValidPassword -->
+        <test-method status="PASS" signature="LoginWithIncorrectUsernamePassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithIncorrectUsernamePassword" duration-ms="4516" started-at="2016-09-20T12:30:04Z" finished-at="2016-09-20T12:30:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithIncorrectUsernamePassword -->
+        <test-method status="PASS" signature="LoginWithCaseSensitiveUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithCaseSensitiveUsernameAndValidPassword" duration-ms="19925" started-at="2016-09-20T12:30:08Z" finished-at="2016-09-20T12:30:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithCaseSensitiveUsernameAndValidPassword -->
+        <test-method status="PASS" signature="loginWithValidCredentials()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="loginWithValidCredentials" duration-ms="4645" started-at="2016-09-20T12:30:28Z" finished-at="2016-09-20T12:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="tearDown" is-config="true" duration-ms="821" started-at="2016-09-20T12:30:33Z" finished-at="2016-09-20T12:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dsi.suites.LoginTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- Suite1 -->
+</testng-results>

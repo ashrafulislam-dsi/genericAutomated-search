@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" verbose="1" preserve-order="true">
+ 
+  <test name="RegressionTest" >
+    <classes>
+       <class name="com.dsi.suites.LoginTest">
+       		<methods>
+                <include name="testURL" />
+       			<include name="test_blankLogin" />
+       			<include name="LoginWithValidUsernameAndPasswordBlank" />
+       			<include name="LoginWithBlankUsernameAndValidPassword" />
+       			<include name="LoginWithIncorrectUsernamePassword" />
+       			<include name="LoginWithCaseSensitiveUsernameAndValidPassword" />
+       			<include name="loginWithValidCredentials" />
+       		</methods>
+       </class>
+    </classes>
+  </test>
+ 
+</suite>
+
