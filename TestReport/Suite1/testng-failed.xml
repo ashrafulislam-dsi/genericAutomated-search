@@ -3,13 +3,15 @@
 <suite name="Failed suite [Suite1]">
   <test name="RegressionTest(failed)">
     <classes>
-      <class name="com.dsi.suites.LoginTest">
+      <class name="com.dsi.suites.SearchEmployeeTest">
         <methods>
-          <include name="LoginWithCaseSensitiveUsernameAndValidPassword"/>
+          <include name="activeSearchTest"/>
           <include name="setUp"/>
+          <include name="loginIntoSystem"/>
+          <include name="logoutFromSystem"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.dsi.suites.LoginTest -->
+      </class> <!-- com.dsi.suites.SearchEmployeeTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

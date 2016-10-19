@@ -1,49 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="56713" started-at="2016-09-20T06:29:37Z" finished-at="2016-09-20T06:30:34Z">
+  <suite name="Suite1" duration-ms="31850" started-at="2016-10-17T13:26:50Z" finished-at="2016-10-17T13:27:22Z">
     <groups>
     </groups>
-    <test name="RegressionTest" duration-ms="56713" started-at="2016-09-20T06:29:37Z" finished-at="2016-09-20T06:30:34Z">
-      <class name="com.dsi.suites.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="setUp" is-config="true" duration-ms="12242" started-at="2016-09-20T12:29:37Z" finished-at="2016-09-20T12:29:49Z">
+    <test name="RegressionTest" duration-ms="31850" started-at="2016-10-17T13:26:50Z" finished-at="2016-10-17T13:27:22Z">
+      <class name="com.dsi.suites.SearchEmployeeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dsi.suites.SearchEmployeeTest@490d6c15]" name="setUp" is-config="true" duration-ms="8897" started-at="2016-10-17T19:26:50Z" finished-at="2016-10-17T19:26:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testURL()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="testURL" duration-ms="380" started-at="2016-09-20T12:29:50Z" finished-at="2016-09-20T12:29:50Z">
+        <test-method status="PASS" signature="loginIntoSystem()[pri:0, instance:com.dsi.suites.SearchEmployeeTest@490d6c15]" name="loginIntoSystem" is-config="true" duration-ms="5326" started-at="2016-10-17T19:26:59Z" finished-at="2016-10-17T19:27:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method status="PASS" signature="test_blankLogin()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="test_blankLogin" duration-ms="4414" started-at="2016-09-20T12:29:50Z" finished-at="2016-09-20T12:29:54Z">
+        </test-method> <!-- loginIntoSystem -->
+        <test-method status="FAIL" signature="activeSearchTest()[pri:0, instance:com.dsi.suites.SearchEmployeeTest@490d6c15]" name="activeSearchTest" duration-ms="437" started-at="2016-10-17T19:27:05Z" finished-at="2016-10-17T19:27:05Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.ng-scope > div"}
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 413d4b0b-261c-4e1f-ba08-550d24396d61
+*** Element info: {Using=css selector, value=body > div.ng-scope > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.ng-scope > div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.ng-scope > div"}
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 413d4b0b-261c-4e1f-ba08-550d24396d61
+*** Element info: {Using=css selector, value=body > div.ng-scope > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.ng-scope > div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.dsi.common.TestHelper.getElementText(TestHelper.java:57)
+	at com.dsi.suites.SearchEmployeeTest.activeSearchTest(SearchEmployeeTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at com.dsi.common.TestStarter.startTest(TestStarter.java:32)
+	at com.dsi.main.Main.main(Main.java:7)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.ng-scope > div"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous579291226269044164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/me/AppData/Local/Temp/anonymous579291226269044164webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/me/AppData/Local/Temp/anonymous579291226269044164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous579291226269044164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/me/AppData/Local/Temp/anonymous579291226269044164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_blankLogin -->
-        <test-method status="PASS" signature="LoginWithValidUsernameAndPasswordBlank()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithValidUsernameAndPasswordBlank" duration-ms="5201" started-at="2016-09-20T12:29:54Z" finished-at="2016-09-20T12:30:00Z">
+        </test-method> <!-- activeSearchTest -->
+        <test-method status="PASS" signature="logoutFromSystem()[pri:0, instance:com.dsi.suites.SearchEmployeeTest@490d6c15]" name="logoutFromSystem" is-config="true" duration-ms="15601" started-at="2016-10-17T19:27:05Z" finished-at="2016-10-17T19:27:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithValidUsernameAndPasswordBlank -->
-        <test-method status="PASS" signature="LoginWithBlankUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithBlankUsernameAndValidPassword" duration-ms="4409" started-at="2016-09-20T12:30:00Z" finished-at="2016-09-20T12:30:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithBlankUsernameAndValidPassword -->
-        <test-method status="PASS" signature="LoginWithIncorrectUsernamePassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithIncorrectUsernamePassword" duration-ms="4516" started-at="2016-09-20T12:30:04Z" finished-at="2016-09-20T12:30:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithIncorrectUsernamePassword -->
-        <test-method status="PASS" signature="LoginWithCaseSensitiveUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="LoginWithCaseSensitiveUsernameAndValidPassword" duration-ms="19925" started-at="2016-09-20T12:30:08Z" finished-at="2016-09-20T12:30:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithCaseSensitiveUsernameAndValidPassword -->
-        <test-method status="PASS" signature="loginWithValidCredentials()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="loginWithValidCredentials" duration-ms="4645" started-at="2016-09-20T12:30:28Z" finished-at="2016-09-20T12:30:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dsi.suites.LoginTest@60215eee]" name="tearDown" is-config="true" duration-ms="821" started-at="2016-09-20T12:30:33Z" finished-at="2016-09-20T12:30:34Z">
+        </test-method> <!-- logoutFromSystem -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.dsi.suites.SearchEmployeeTest@490d6c15]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-10-17T19:27:21Z" finished-at="2016-10-17T19:27:21Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 413d4b0b-261c-4e1f-ba08-550d24396d61]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 413d4b0b-261c-4e1f-ba08-550d24396d61
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
+	at com.dsi.common.TestHelper.tearDown(TestHelper.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1023)
+	at org.testng.TestRunner.run(TestRunner.java:628)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at com.dsi.common.TestStarter.startTest(TestStarter.java:32)
+	at com.dsi.main.Main.main(Main.java:7)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dsi.suites.LoginTest -->
+      </class> <!-- com.dsi.suites.SearchEmployeeTest -->
     </test> <!-- RegressionTest -->
   </suite> <!-- Suite1 -->
 </testng-results>

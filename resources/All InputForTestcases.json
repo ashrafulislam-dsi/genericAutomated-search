@@ -1,0 +1,123 @@
+ [
+    {"valid":{
+      "firstName": "abuu",
+      "lastName": "umair",
+      "otherName": "jihan",
+      "bankAccount": 1234567,
+      "NID": 1234,
+      "email": "abu@gmail.com",
+      "teamName": "beta",
+      "projectName": "bravo"
+      
+    }},
+    {
+      "invalid":{
+      "firstName": "abuu",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": ""
+      }
+     
+    },
+    {
+      "valid":{
+      "firstName": "",
+      "lastName": "Ahmed",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": ""
+      }
+    },
+    {
+      "invalid":{
+	  "firstName": "",
+      "lastName": "",
+      "otherName": "jihan",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": ""	
+    	}
+    },
+    {
+      "invalid":{
+      "firstName": "",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": 1234567,
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": ""
+      
+      }
+    },
+    {
+     "invalid":{
+      "firstName": "",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": 1234,
+      "email": "",
+      "teamName": "",
+      "projectName": ""
+     }
+    },
+    {
+      "invalid":{
+      "firstName": "",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "abu@gmail.com",
+      "teamName": "",
+      "projectName": ""
+      }
+    },
+    {
+      "invalid":{
+      "firstName": "",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "beta",
+      "projectName": ""
+      }
+    },
+    {
+     "valid":{
+      "firstName": "",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": "bravo"
+     }
+    },
+    {
+     "valid":{
+      "firstName": "emp2",
+      "lastName": "",
+      "otherName": "",
+      "bankAccount": "",
+      "NID": "",
+      "email": "",
+      "teamName": "",
+      "projectName": ""
+      }
+    }
+  ]

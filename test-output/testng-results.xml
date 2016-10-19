@@ -1,340 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="7" passed="3">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83457" started-at="2016-09-07T11:49:25Z" finished-at="2016-09-07T11:50:48Z">
+  <suite name="Default suite" duration-ms="181722" started-at="2016-10-19T06:00:32Z" finished-at="2016-10-19T06:03:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83457" started-at="2016-09-07T11:49:25Z" finished-at="2016-09-07T11:50:48Z">
-      <class name="com.dsi.suites.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="setUp" is-config="true" duration-ms="8874" started-at="2016-09-07T17:49:25Z" finished-at="2016-09-07T17:49:33Z">
+    <test name="Default test" duration-ms="181722" started-at="2016-10-19T06:00:32Z" finished-at="2016-10-19T06:03:34Z">
+      <class name="com.dsi.suites.DataProviderSearch">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="setUp" is-config="true" duration-ms="10775" started-at="2016-10-19T12:00:32Z" finished-at="2016-10-19T12:00:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginWithBlankUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="LoginWithBlankUsernameAndValidPassword" duration-ms="4754" started-at="2016-09-07T17:49:33Z" finished-at="2016-09-07T17:49:38Z">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="doLogin" is-config="true" duration-ms="5444" started-at="2016-10-19T12:00:43Z" finished-at="2016-10-19T12:00:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithBlankUsernameAndValidPassword -->
-        <test-method status="FAIL" signature="LoginWithCaseSensitiveUsernameAndValidPassword()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="LoginWithCaseSensitiveUsernameAndValidPassword" duration-ms="64145" started-at="2016-09-07T17:49:38Z" finished-at="2016-09-07T17:50:42Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div:nth-child(2) > div > div > div > div.col-xs-8.col-sm-6.col-md-5.col-lg-4 > div.formContainer > div.formBody > form > div:nth-child(1) > span:nth-child(4)"}
-Command duration or timeout: 36 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=css selector, value=body > div.ng-scope > div:nth-child(2) > div > div > div > div.col-xs-8.col-sm-6.col-md-5.col-lg-4 > div.formContainer > div.formBody > form > div:nth-child(1) > span:nth-child(4)}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div:nth-child(2) > div > div > div > div.col-xs-8.col-sm-6.col-md-5.col-lg-4 > div.formContainer > div.formBody > form > div:nth-child(1) > span:nth-child(4)"}
-Command duration or timeout: 36 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=css selector, value=body > div.ng-scope > div:nth-child(2) > div > div > div > div.col-xs-8.col-sm-6.col-md-5.col-lg-4 > div.formContainer > div.formBody > form > div:nth-child(1) > span:nth-child(4)}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.dsi.common.TestHelper.getElementText(TestHelper.java:50)
-	at com.dsi.suites.LoginTest.LoginWithCaseSensitiveUsernameAndValidPassword(LoginTest.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div:nth-child(2) > div > div > div > div.col-xs-8.col-sm-6.col-md-5.col-lg-4 > div.formContainer > div.formBody > form > div:nth-child(1) > span:nth-child(4)"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16899" started-at="2016-10-19T12:00:49Z" data-provider="getData" finished-at="2016-10-19T12:01:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"valid":{"bankAccount":1234567,"teamName":"beta","firstName":"abuu","lastName":"umair","NID":1234,"otherName":"jihan","projectName":"bravo","email":"abu@gmail.com"}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithCaseSensitiveUsernameAndValidPassword -->
-        <test-method status="FAIL" signature="LoginWithIncorrectUsernamePassword()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="LoginWithIncorrectUsernamePassword" duration-ms="67" started-at="2016-09-07T17:50:42Z" finished-at="2016-09-07T17:50:42Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 57 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 57 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.dsi.common.TestHelper.enterData(TestHelper.java:34)
-	at com.dsi.suites.pages.LoginPage.signIn(LoginPage.java:15)
-	at com.dsi.suites.LoginTest.LoginWithIncorrectUsernamePassword(LoginTest.java:67)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16499" started-at="2016-10-19T12:01:06Z" data-provider="getData" finished-at="2016-10-19T12:01:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":"","teamName":"","firstName":"abuu","lastName":"","NID":"","otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithIncorrectUsernamePassword -->
-        <test-method status="FAIL" signature="LoginWithValidUsernameAndPasswordBlank()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="LoginWithValidUsernameAndPasswordBlank" duration-ms="51" started-at="2016-09-07T17:50:42Z" finished-at="2016-09-07T17:50:42Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 48 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 48 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.dsi.common.TestHelper.enterData(TestHelper.java:34)
-	at com.dsi.suites.pages.LoginPage.signIn(LoginPage.java:15)
-	at com.dsi.suites.LoginTest.LoginWithValidUsernameAndPasswordBlank(LoginTest.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16366" started-at="2016-10-19T12:01:22Z" data-provider="getData" finished-at="2016-10-19T12:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"valid":{"bankAccount":"","teamName":"","firstName":"","lastName":"Ahmed","NID":"","otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithValidUsernameAndPasswordBlank -->
-        <test-method status="FAIL" signature="loginWithValidCredentials()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="loginWithValidCredentials" duration-ms="79" started-at="2016-09-07T17:50:42Z" finished-at="2016-09-07T17:50:43Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 71 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-Command duration or timeout: 71 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 57bd34a9-4045-4570-9ce9-2c0671d35ce4
-*** Element info: {Using=id, value=usr}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.dsi.common.TestHelper.enterData(TestHelper.java:34)
-	at com.dsi.suites.pages.LoginPage.signIn(LoginPage.java:15)
-	at com.dsi.suites.LoginTest.loginWithValidCredentials(LoginTest.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"usr"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-DR53LUO', ip: '10.0.0.232', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/me/AppData/Local/Temp/anonymous4057327756974625812webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16303" started-at="2016-10-19T12:01:38Z" data-provider="getData" finished-at="2016-10-19T12:01:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":"","teamName":"","firstName":"","lastName":"","NID":"","otherName":"jihan","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="testURL()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="testURL" duration-ms="135" started-at="2016-09-07T17:50:43Z" finished-at="2016-09-07T17:50:43Z">
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16613" started-at="2016-10-19T12:01:55Z" data-provider="getData" finished-at="2016-10-19T12:02:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":1234567,"teamName":"","firstName":"","lastName":"","NID":"","otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method status="PASS" signature="test_blankLogin()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="test_blankLogin" duration-ms="4358" started-at="2016-09-07T17:50:43Z" finished-at="2016-09-07T17:50:47Z">
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16416" started-at="2016-10-19T12:02:11Z" data-provider="getData" finished-at="2016-10-19T12:02:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":"","teamName":"","firstName":"","lastName":"","NID":1234,"otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_blankLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dsi.suites.LoginTest@35047d03]" name="tearDown" is-config="true" duration-ms="927" started-at="2016-09-07T17:50:47Z" finished-at="2016-09-07T17:50:48Z">
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16642" started-at="2016-10-19T12:02:28Z" data-provider="getData" finished-at="2016-10-19T12:02:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":"","teamName":"","firstName":"","lastName":"","NID":"","otherName":"","projectName":"","email":"abu@gmail.com"}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16230" started-at="2016-10-19T12:02:44Z" data-provider="getData" finished-at="2016-10-19T12:03:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"invalid":{"bankAccount":"","teamName":"beta","firstName":"","lastName":"","NID":"","otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16205" started-at="2016-10-19T12:03:01Z" data-provider="getData" finished-at="2016-10-19T12:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"valid":{"bankAccount":"","teamName":"","firstName":"","lastName":"","NID":"","otherName":"","projectName":"bravo","email":""}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testSearch(org.json.simple.JSONObject)[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="testSearch" duration-ms="16294" started-at="2016-10-19T12:03:17Z" data-provider="getData" finished-at="2016-10-19T12:03:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"valid":{"bankAccount":"","teamName":"","firstName":"emp2","lastName":"","NID":"","otherName":"","projectName":"","email":""}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dsi.suites.DataProviderSearch@18be83e4]" name="tearDown" is-config="true" duration-ms="989" started-at="2016-10-19T12:03:33Z" finished-at="2016-10-19T12:03:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dsi.suites.LoginTest -->
+      </class> <!-- com.dsi.suites.DataProviderSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

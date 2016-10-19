@@ -1,7 +1,6 @@
 package com.dsi.suites.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.FindBy;
 
 import com.dsi.common.TestHelper;
 

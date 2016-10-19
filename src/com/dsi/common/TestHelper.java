@@ -1,5 +1,10 @@
 package com.dsi.common;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -59,7 +64,7 @@ public class TestHelper{
 	    /*
 	     * 	@param waitTimeInSecond take integer value in second unit
 	     */
-	    public void waitFor(int waitTimeInSecond){
+	    public static void waitFor(int waitTimeInSecond){
 	    	try {
 				Thread.sleep(waitTimeInSecond * 1000);
 			} catch (InterruptedException e) {
@@ -78,5 +83,67 @@ public class TestHelper{
 	    public static void hoverOverElement(By element){
 	    	Actions actions = new Actions(driver);
 	    	actions.moveToElement(driver.findElement(element)).perform();
-	    }	
+	    }
+	    
+	    /**
+	     * 
+	     * @param filePtah exact location of the file to read/get data from
+	     * @param lineNumber number of the line to read
+	     * @return text for specific line or null if not found
+	     */
+	    public static String getDataAt(String filePtah, int lineNumber){
+	    	  String line = "";
+	          
+	          int lineNumberCounter = 1;
+	          try (BufferedReader br = new BufferedReader(new FileReader(filePtah))) {
+
+	              while ((line = br.readLine()) != null) {
+	                  
+	                  if(lineNumberCounter == lineNumber){
+	                	  return line;
+	                  }
+	                  
+	                  lineNumberCounter++;
+
+	              }
+
+	          } catch (IOException e) {
+	              e.printStackTrace();
+	          }
+	          
+	          return null;
+	    }
+	    
+	    public static String getUsableData(String textFromFile){
+	    	return textFromFile.split(",")[0];
+	    }
+	    
+	    /**
+	     * 
+	     * @param dataFromSpecificLine
+	     * @return
+	     */
+	    public  static boolean isDataValid(String dataFromSpecificLine){
+	    	String [] temp = dataFromSpecificLine.split(",");
+	    	if(temp[1].trim().equals("1")){
+	    		System.out.println(temp[0].trim() + " is a valid data");
+	    		return true;
+	    	}else{
+	    		System.out.println(temp[0].trim() + " is an invalid data");
+	    	}
+	    		
+	    	
+	    	return false;
+	    }
+	    
+	    /**
+	     * 
+	     * @param maxBound
+	     * @return
+	     */
+	    public static int getRandomNumberInRange(int maxBound){
+	    	Random random = new Random();
+	    	
+	    	return (random.nextInt(maxBound) + 1);
+	    }
 }

@@ -3,7 +3,7 @@
  
   <test name="RegressionTest" >
     <classes>
-       <class name="com.dsi.suites.LoginTest">
+     <!--  <class name="com.dsi.suites.LoginTest">
        		<methods>
                 <include name="testURL" />
        			<include name="test_blankLogin" />
@@ -12,6 +12,13 @@
        			<include name="LoginWithIncorrectUsernamePassword" />
        			<include name="LoginWithCaseSensitiveUsernameAndValidPassword" />
        			<include name="loginWithValidCredentials" />
+       		</methods>
+       </class>  --> -->
+       <class name="com.dsi.suites.SearchEmployeeTest">
+       		<methods>
+                <include name="activeSearchTest" />
+       			
+       			
        		</methods>
        </class>
     </classes>

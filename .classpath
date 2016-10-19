@@ -26,5 +26,7 @@
 	<classpathentry kind="lib" path="lib/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1-srcs.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1.jar"/>
 	<classpathentry kind="lib" path="lib/testng-6.9.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/me/Downloads/javax.json-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/me/Downloads/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
